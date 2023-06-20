@@ -32,9 +32,8 @@ class DefaultButton extends StatelessWidget {
                     AppColor.lightBackgroundColor),
             backgroundColor: onPressed != null
                 ? MaterialStateProperty.all<Color>(
-                    backgroundColor ?? AppColor.lightBackgroundColor)
-                : MaterialStateProperty.all<Color>(
-                    AppColor.lightBackgroundColor),
+                    backgroundColor ?? AppColor.lightPrimaryColor)
+                : MaterialStateProperty.all<Color>(AppColor.lightGrey),
           ),
           onPressed: onPressed,
           child: Text(

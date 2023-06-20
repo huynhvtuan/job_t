@@ -6,6 +6,8 @@ import 'package:job_t/core/config/app_config.dart';
 import 'package:job_t/core/config/resources/routes_manager.dart';
 import 'package:job_t/core/config/resources/theme_manager.dart';
 import 'package:job_t/core/theme/cubit/theme_cubit.dart';
+import 'package:job_t/presentation/login/provider/login_provider.dart';
+import 'package:job_t/presentation/main/provider/zoom_provider.dart';
 import 'package:job_t/presentation/onboarding/provider/onboarding_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -28,7 +30,9 @@ class _AppState extends State<App> {
       ],
       child: MultiProvider(
         providers: [
-          ChangeNotifierProvider(create: (context) => OnBoardNotifier())
+          ChangeNotifierProvider(create: (context) => OnBoardNotifier()),
+          ChangeNotifierProvider(create: (context) => LoginProvider()),
+          ChangeNotifierProvider(create: (context) => ZoomProvider())
         ],
         child: BlocBuilder<ThemeCubit, ThemeState>(builder: (context, state) {
           return ScreenUtilInit(

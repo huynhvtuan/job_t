@@ -19,7 +19,7 @@ class PageOne extends StatelessWidget {
           children: [
             Space.y(50.w)!,
             Assets.images.page1.image(),
-            Space.y(50.w)!,
+            Space.y(30.w)!,
             Column(
               children: [
                 ReusableText(

@@ -16,24 +16,29 @@ class AppColor {
 
   static const kLightBlue = Color(0xff3663e3);
   static const kDarkBlue = Color(0xff1c153e);
-// Color kCyanColor = const Color(0xFF08F7FE);
-// const btnColor = Color(0xFF4E5E80);
-// const defaultPadding = 200.0;
-// const defaultDuration = Duration(seconds: 1); // we use it on our animation
-// const maxWidth = 1440.0; // max width of our web
+  static const kCyanColor = const Color(0xFF08F7FE);
+  static const btnColor = Color(0xFF4E5E80);
+  static const defaultPadding = 200.0;
+  static const defaultDuration =
+      Duration(seconds: 1); // we use it on our animation
+  static const maxWidth = 1440.0; // max width of our web
 
   static const Color lightBackgroundColor = const Color(0xFFFFFFFF);
-// Color lightPrimaryColor = const Color(0xffFFDDBF);
+  static Color lightPrimaryColor = const Color(0xffFFDDBF);
   static const Color lightTextColor = const Color(0xFF403930);
-// Color lightDividerColor = const Color(0x44948282);
-// Color lightOutLineBtnColor = const Color(0xFF4D5566);
+  static Color lightDividerColor = const Color(0x44948282);
+  static Color lightOutLineBtnColor = const Color(0xFF4D5566);
+  static const lightGrey = Color.fromARGB(148, 178, 175, 175);
+  static const lightTextFieldBgGrey = Color.fromARGB(147, 226, 219, 219);
+  static const lightBgJobItem = Color.fromARGB(162, 253, 247, 247);
 
 //
   static const Color darkBackgroundColor = const Color(0xFF2B2B2B);
-// Color darkPrimaryColor = const Color(0xFFFFDDBF);
+  Color darkPrimaryColor = const Color(0xFFFFDDBF);
   static const Color darkTextColor = const Color(0xFFF3F2FF);
-// Color darkDividerColor = const Color(0x441C2A3D);
-// Color darkOutLineBtnColor = const Color(0xFFF3F2FF);
+  Color darkDividerColor = const Color(0x441C2A3D);
+  Color darkOutLineBtnColor = const Color(0xFFF3F2FF);
+  static const darkGrey = Color(0xFF9B9B9B);
 
   static const pinkpurple = LinearGradient(
     begin: Alignment.centerLeft,

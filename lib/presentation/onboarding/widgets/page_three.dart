@@ -1,16 +1,18 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:job_t/core/config/others/app_typography.dart';
 import 'package:job_t/core/config/others/space.dart';
 import 'package:job_t/core/config/resources/assets.gen.dart';
 import 'package:job_t/core/config/resources/color_manager.dart';
+import 'package:job_t/core/config/resources/routes_manager.dart';
 import 'package:job_t/core/res/responsive_size.dart';
-import 'package:job_t/presentation/widgets/common/default_button.dart';
 import 'package:job_t/presentation/widgets/common/outline_btn.dart';
 import 'package:job_t/presentation/widgets/common/reusable_text.dart';
 
 class PageThree extends StatelessWidget {
-  const PageThree({super.key});
+  PageThree({super.key});
+  final _appRoute = RoutesManager();
 
   @override
   Widget build(BuildContext context) {
@@ -46,13 +48,17 @@ class PageThree extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     OutlineCCButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        context.router.pushNamed(RouteName.login);
+                      },
                       backgroundColor: Colors.transparent,
                       foregroundColor: AppColor.darkTextColor,
                       title: 'Login',
                     ),
                     OutlineCCButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        context.router.pushNamed(RouteName.signUp);
+                      },
                       title: 'Sign Up',
                     ),
                   ],
